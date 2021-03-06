@@ -10,4 +10,14 @@ An audio web app that retrieves data about different musicians from different ge
 4. jQuery
 5. AudioDB API
 
-## Screenshots
+## Link to my live site
+
+<link>https://midris360.github.io/ </link>
+
+### Installation Instructions
+
+
+
+#### Unsolved problems
+
+Still having problems with fetching data from my API audiodb to be rendered.
