@@ -16,8 +16,9 @@ An audio web app that retrieves data about different musicians from different ge
 <link>https://midris360.github.io/ </link>
 
 
-#### Add-Ons for later
+#### Add-Ons/Fixes for later
 
 - Retrieve images when searching for artist
 - Be able to listen to the artist music
 - be able to watch videos from the artist as well
+- Add all the albums each artist have
