@@ -1,0 +1,21 @@
+@media (max-width: 650px) {
+    display: flex;
+
+}
+
+body {
+    margin: auto;
+    background: brown;
+    background-size: auto;
+}
+
+h1 {
+    margin: auto;
+    position: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    margin: auto;
+    position: center;
+}

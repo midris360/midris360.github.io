@@ -1,6 +1,7 @@
 const $artist = $('#artist');
 const $genre = $('#genre');
 const $bornyear = $('#bornyear');
+const $thumbnail = $('#thumbnail');
 const $input = $('input[type="text"]');
 
 let audioData, userInput;
@@ -16,10 +17,12 @@ function handleGetData(event) {
     // getting the user input
 
    $.ajax({
-         url:'theaudiodb.com/api/v1/json/9973533/artist.php?s=' + userInput
-      }).then(
+         url:`https://www.theaudiodb.com/api/v1/json/1/search.php?s=${userInput}`      
+        }).then(
         (data) => {
-         audioData = data;
+         audioData = data.artists[0];
+         console.log(userInput);
+         console.log(audioData);
          render();
         },
         (error) => {
@@ -30,7 +33,8 @@ function handleGetData(event) {
     
 
 function render() {
-    $artist.text(audioData.artists.strArtist);
-    $genre.text(audioData.artists.strGenre);
-    $bornyear.text(audioData.artists.intBornYear);
+    $thumbnail.text(audioData.strArtistThumb)
+    $artist.text(audioData.strArtist);
+    $genre.text(audioData.strGenre);
+    $bornyear.text(audioData.intBornYear);
  }
