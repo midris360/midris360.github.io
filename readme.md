@@ -7,7 +7,7 @@ An audio web app that retrieves data about different musicians from different ge
 1. HTML5
 2. CSS3
 3. JavaScript
-4. Ajax
-5. jQuery
+4. jQuery
+5. AudioDB API
 
 ## Screenshots

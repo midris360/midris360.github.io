@@ -1,6 +1,6 @@
 const $artist = $('#artist');
-const $album = $('#album');
-const $single = $('#single');
+const $genre = $('#genre');
+const $bornyear = $('#bornyear');
 const $input = $('input[type="text"]');
 
 let audioData, userInput;
@@ -16,7 +16,7 @@ function handleGetData(event) {
     // getting the user input
 
    $.ajax({
-         url:'https://www.theaudiodb.com/api/v1/json/9973533/search.php?s=' + userInput
+         url:'theaudiodb.com/api/v1/json/9973533/artist.php?s=' + userInput
       }).then(
         (data) => {
          audioData = data;
@@ -30,7 +30,7 @@ function handleGetData(event) {
     
 
 function render() {
-    $artist.text(audioData.strArtist);
-    $album.text(audioData.main.temp);
-    $single.text(weatherData.main.feels_like);
+    $artist.text(audioData.artists.strArtist);
+    $genre.text(audioData.artists.strGenre);
+    $bornyear.text(audioData.artists.intBornYear);
  }
