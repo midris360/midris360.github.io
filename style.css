@@ -9,13 +9,31 @@ body {
     background-size: auto;
 }
 
+.logo1 {
+    text-align: center;
+
+}
+.logo1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+
 h1 {
     margin: auto;
-    position: center;
+    text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p {
     margin: auto;
-    position: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+form {
+    text-align: center;
 }

@@ -1,5 +1,6 @@
 # My First Web Application - Project One
-<>
+
+## About the app
 An audio web app that retrieves data about different musicians from different genres using TheAudiodb API.
 
 ## Tehcnologies I've used
@@ -8,16 +9,15 @@ An audio web app that retrieves data about different musicians from different ge
 2. CSS3
 3. JavaScript
 4. jQuery
-5. AudioDB API
+5. AudioDB API - <link>https://www.theaudiodb.com/api_guide.php</link>
 
 ## Link to my live site
 
 <link>https://midris360.github.io/ </link>
 
-### Installation Instructions
 
+#### Add-Ons for later
 
-
-#### Unsolved problems
-
-Still having problems with fetching data from my API audiodb to be rendered.
+- Retrieve images when searching for artist
+- Be able to listen to the artist music
+- be able to watch videos from the artist as well

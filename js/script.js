@@ -1,7 +1,8 @@
 const $artist = $('#artist');
 const $genre = $('#genre');
 const $bornyear = $('#bornyear');
-const $thumbnail = $('#thumbnail');
+const $birthplace = $('#birthplace');
+const $biography = $('#biography');
 const $input = $('input[type="text"]');
 
 let audioData, userInput;
@@ -33,8 +34,9 @@ function handleGetData(event) {
     
 
 function render() {
-    $thumbnail.text(audioData.strArtistThumb)
     $artist.text(audioData.strArtist);
     $genre.text(audioData.strGenre);
     $bornyear.text(audioData.intBornYear);
+    $birthplace.text(audioData.strCountry);
+    $biography.text(audioData.strBiographyEN);
  }
